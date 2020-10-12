@@ -229,7 +229,7 @@ function cleanTables(db) {
       thingful_things,
       thingful_users,
       thingful_reviews
-      `
+      RESTART IDENTITY CASCADE`
   )
   .then(() => 
     Promise.all([
